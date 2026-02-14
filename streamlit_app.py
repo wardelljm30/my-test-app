@@ -39,10 +39,10 @@ else:
 
 df_orig = df_orig.reset_index(drop=True)
 
-with st.expander("Original (read-only)", expanded=False):
+with st.expander("Global Anum Mapping", expanded=False):
 	st.dataframe(df_orig)
 
-st.subheader("Editable Mappings")
+st.subheader("Deliverable Mappings")
 edited = st.data_editor(df_orig, num_rows="fixed", use_container_width=True)
 
 # detect rows where any column changed
